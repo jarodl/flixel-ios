@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A18561F13AA97B900E468C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18561E13AA97B900E468C2 /* QuartzCore.framework */; };
+		7A18562113AA97B900E468C2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562013AA97B900E468C2 /* OpenGLES.framework */; };
+		7A18562313AA97B900E468C2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562213AA97B900E468C2 /* OpenAL.framework */; };
+		7A18562513AA97B900E468C2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562413AA97B900E468C2 /* AudioToolbox.framework */; };
+		7A18562713AA97B900E468C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562613AA97B900E468C2 /* AVFoundation.framework */; };
+		7A18562913AA97B900E468C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562813AA97B900E468C2 /* UIKit.framework */; };
+		7A18562B13AA97B900E468C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562A13AA97B900E468C2 /* Foundation.framework */; };
+		7A18562D13AA97B900E468C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18562C13AA97B900E468C2 /* CoreGraphics.framework */; };
+		7A18563113AA97B900E468C2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563013AA97B900E468C2 /* Default.png */; };
+		7A18563513AA97B900E468C2 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563413AA97B900E468C2 /* Icon-72.png */; };
+		7A18563713AA97B900E468C2 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563613AA97B900E468C2 /* Icon-Small-50.png */; };
+		7A18563913AA97B900E468C2 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563813AA97B900E468C2 /* Icon-Small.png */; };
+		7A18563B13AA97B900E468C2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563A13AA97B900E468C2 /* Icon-Small@2x.png */; };
+		7A18563D13AA97B900E468C2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563C13AA97B900E468C2 /* Icon.png */; };
+		7A18563F13AA97B900E468C2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18563E13AA97B900E468C2 /* Icon@2x.png */; };
+		7A18564213AA97B900E468C2 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 7A18564113AA97B900E468C2 /* iTunesArtwork */; };
+		7A1856BA13AA97BA00E468C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856B913AA97BA00E468C2 /* main.m */; };
+		7A1856BE13AA97BA00E468C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856BD13AA97BA00E468C2 /* AppDelegate.m */; };
+		7A1856C113AA97BA00E468C2 /* UIImage+RIFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856C013AA97BA00E468C2 /* UIImage+RIFAddition.m */; };
+		7A1856C413AA97BA00E468C2 /* Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856C313AA97BA00E468C2 /* Example.m */; };
+		7A1856C713AA97BA00E468C2 /* ExampleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856C613AA97BA00E468C2 /* ExampleState.m */; };
+		7A18571E13AA97E100E468C2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A1856CE13AA97E100E468C2 /* .gitignore */; };
+		7A18571F13AA97E100E468C2 /* ENGINE_LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 7A1856CF13AA97E100E468C2 /* ENGINE_LICENSE.TXT */; };
+		7A18572013AA97E100E468C2 /* Flixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A1856D113AA97E100E468C2 /* Flixel.ttf */; };
+		7A18572113AA97E100E468C2 /* FlixelFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856D213AA97E100E468C2 /* FlixelFont.m */; };
+		7A18572213AA97E100E468C2 /* FlashFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856FC13AA97E100E468C2 /* FlashFunction.m */; };
+		7A18572313AA97E100E468C2 /* FlashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856FD13AA97E100E468C2 /* FlashObject.m */; };
+		7A18572413AA97E100E468C2 /* FlashPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856FE13AA97E100E468C2 /* FlashPoint.m */; };
+		7A18572513AA97E100E468C2 /* FlashRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1856FF13AA97E100E468C2 /* FlashRectangle.m */; };
+		7A18572613AA97E100E468C2 /* FlixelAPTBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570113AA97E100E468C2 /* FlixelAPTBindings.m */; };
+		7A18572713AA97E100E468C2 /* FlxAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570213AA97E100E468C2 /* FlxAnim.m */; };
+		7A18572813AA97E100E468C2 /* FlxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570313AA97E100E468C2 /* FlxButton.m */; };
+		7A18572913AA97E100E468C2 /* FlxEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570413AA97E100E468C2 /* FlxEmitter.m */; };
+		7A18572A13AA97E100E468C2 /* FlxFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570513AA97E100E468C2 /* FlxFade.m */; };
+		7A18572B13AA97E100E468C2 /* FlxFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570613AA97E100E468C2 /* FlxFlash.m */; };
+		7A18572C13AA97E100E468C2 /* FlxG.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570713AA97E100E468C2 /* FlxG.m */; };
+		7A18572D13AA97E100E468C2 /* FlxGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570813AA97E100E468C2 /* FlxGame.m */; };
+		7A18572E13AA97E100E468C2 /* FlxGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570913AA97E100E468C2 /* FlxGLView.m */; };
+		7A18572F13AA97E100E468C2 /* FlxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570A13AA97E100E468C2 /* FlxGroup.m */; };
+		7A18573013AA97E100E468C2 /* FlxList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570B13AA97E100E468C2 /* FlxList.m */; };
+		7A18573113AA97E100E468C2 /* FlxManagedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570C13AA97E100E468C2 /* FlxManagedSprite.m */; };
+		7A18573213AA97E100E468C2 /* FlxObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570D13AA97E100E468C2 /* FlxObject.m */; };
+		7A18573313AA97E100E468C2 /* FlxPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570E13AA97E100E468C2 /* FlxPoint.m */; };
+		7A18573413AA97E100E468C2 /* FlxQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18570F13AA97E100E468C2 /* FlxQuadTree.m */; };
+		7A18573513AA97E100E468C2 /* FlxQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571013AA97E100E468C2 /* FlxQuake.m */; };
+		7A18573613AA97E100E468C2 /* FlxRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571113AA97E100E468C2 /* FlxRect.m */; };
+		7A18573713AA97E100E468C2 /* FlxSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571213AA97E100E468C2 /* FlxSave.m */; };
+		7A18573813AA97E100E468C2 /* FlxSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571313AA97E100E468C2 /* FlxSound.m */; };
+		7A18573913AA97E100E468C2 /* FlxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571413AA97E100E468C2 /* FlxSprite.m */; };
+		7A18573A13AA97E100E468C2 /* FlxState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571513AA97E100E468C2 /* FlxState.m */; };
+		7A18573B13AA97E100E468C2 /* FlxText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571613AA97E100E468C2 /* FlxText.m */; };
+		7A18573C13AA97E100E468C2 /* FlxTileblock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571713AA97E100E468C2 /* FlxTileblock.m */; };
+		7A18573D13AA97E100E468C2 /* FlxTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571813AA97E100E468C2 /* FlxTouches.m */; };
+		7A18573E13AA97E100E468C2 /* FlxU.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571913AA97E100E468C2 /* FlxU.m */; };
+		7A18573F13AA97E100E468C2 /* SemiSecretFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571B13AA97E100E468C2 /* SemiSecretFont.m */; };
+		7A18574013AA97E100E468C2 /* SemiSecretText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571C13AA97E100E468C2 /* SemiSecretText.m */; };
+		7A18574113AA97E100E468C2 /* SemiSecretTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18571D13AA97E100E468C2 /* SemiSecretTexture.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A18561A13AA97B900E468C2 /* flixel-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flixel-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A18561E13AA97B900E468C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A18562013AA97B900E468C2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7A18562213AA97B900E468C2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		7A18562413AA97B900E468C2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7A18562613AA97B900E468C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7A18562813AA97B900E468C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7A18562A13AA97B900E468C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A18562C13AA97B900E468C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7A18563013AA97B900E468C2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		7A18563413AA97B900E468C2 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
+		7A18563613AA97B900E468C2 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		7A18563813AA97B900E468C2 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
+		7A18563A13AA97B900E468C2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7A18563C13AA97B900E468C2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		7A18563E13AA97B900E468C2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		7A18564013AA97B900E468C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		7A18564113AA97B900E468C2 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = text; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
+		7A1856B713AA97BA00E468C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A1856B813AA97BA00E468C2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		7A1856B913AA97BA00E468C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A1856BC13AA97BA00E468C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		7A1856BD13AA97BA00E468C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		7A1856BF13AA97BA00E468C2 /* UIImage+RIFAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+RIFAddition.h"; path = "Classes/UIImage+RIFAddition.h"; sourceTree = "<group>"; };
+		7A1856C013AA97BA00E468C2 /* UIImage+RIFAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RIFAddition.m"; path = "Classes/UIImage+RIFAddition.m"; sourceTree = "<group>"; };
+		7A1856C213AA97BA00E468C2 /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Example.h; path = Classes/Example.h; sourceTree = "<group>"; };
+		7A1856C313AA97BA00E468C2 /* Example.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Example.m; path = Classes/Example.m; sourceTree = "<group>"; };
+		7A1856C513AA97BA00E468C2 /* ExampleState.h */ = {isa = PBXFileReference; name = ExampleState.h; path = Classes/ExampleState.h; sourceTree = "<group>"; };
+		7A1856C613AA97BA00E468C2 /* ExampleState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ExampleState.m; path = Classes/ExampleState.m; sourceTree = "<group>"; };
+		7A1856CE13AA97E100E468C2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7A1856CF13AA97E100E468C2 /* ENGINE_LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ENGINE_LICENSE.TXT; sourceTree = "<group>"; };
+		7A1856D113AA97E100E468C2 /* Flixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flixel.ttf; sourceTree = "<group>"; };
+		7A1856D213AA97E100E468C2 /* FlixelFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlixelFont.m; sourceTree = "<group>"; };
+		7A1856D513AA97E100E468C2 /* Flash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flash.h; sourceTree = "<group>"; };
+		7A1856D613AA97E100E468C2 /* FlashFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashFunction.h; sourceTree = "<group>"; };
+		7A1856D713AA97E100E468C2 /* FlashObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashObject.h; sourceTree = "<group>"; };
+		7A1856D813AA97E100E468C2 /* FlashPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashPoint.h; sourceTree = "<group>"; };
+		7A1856D913AA97E100E468C2 /* FlashRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRectangle.h; sourceTree = "<group>"; };
+		7A1856DB13AA97E100E468C2 /* Flixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flixel.h; sourceTree = "<group>"; };
+		7A1856DC13AA97E100E468C2 /* FlixelAPTBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlixelAPTBindings.h; sourceTree = "<group>"; };
+		7A1856DD13AA97E100E468C2 /* FlxAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxAnim.h; sourceTree = "<group>"; };
+		7A1856DE13AA97E100E468C2 /* FlxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxButton.h; sourceTree = "<group>"; };
+		7A1856DF13AA97E100E468C2 /* FlxEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxEmitter.h; sourceTree = "<group>"; };
+		7A1856E013AA97E100E468C2 /* FlxFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxFade.h; sourceTree = "<group>"; };
+		7A1856E113AA97E100E468C2 /* FlxFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxFlash.h; sourceTree = "<group>"; };
+		7A1856E213AA97E100E468C2 /* FlxG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxG.h; sourceTree = "<group>"; };
+		7A1856E313AA97E100E468C2 /* FlxGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxGame.h; sourceTree = "<group>"; };
+		7A1856E413AA97E100E468C2 /* FlxGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxGLView.h; sourceTree = "<group>"; };
+		7A1856E513AA97E100E468C2 /* FlxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxGroup.h; sourceTree = "<group>"; };
+		7A1856E613AA97E100E468C2 /* FlxList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxList.h; sourceTree = "<group>"; };
+		7A1856E713AA97E100E468C2 /* FlxManagedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxManagedSprite.h; sourceTree = "<group>"; };
+		7A1856E813AA97E100E468C2 /* FlxObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxObject.h; sourceTree = "<group>"; };
+		7A1856E913AA97E100E468C2 /* FlxPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxPoint.h; sourceTree = "<group>"; };
+		7A1856EA13AA97E100E468C2 /* FlxQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxQuadTree.h; sourceTree = "<group>"; };
+		7A1856EB13AA97E100E468C2 /* FlxQuake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxQuake.h; sourceTree = "<group>"; };
+		7A1856EC13AA97E100E468C2 /* FlxRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxRect.h; sourceTree = "<group>"; };
+		7A1856ED13AA97E100E468C2 /* FlxSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxSave.h; sourceTree = "<group>"; };
+		7A1856EE13AA97E100E468C2 /* FlxSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxSound.h; sourceTree = "<group>"; };
+		7A1856EF13AA97E100E468C2 /* FlxSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxSprite.h; sourceTree = "<group>"; };
+		7A1856F013AA97E100E468C2 /* FlxState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxState.h; sourceTree = "<group>"; };
+		7A1856F113AA97E100E468C2 /* FlxText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxText.h; sourceTree = "<group>"; };
+		7A1856F213AA97E100E468C2 /* FlxTileblock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxTileblock.h; sourceTree = "<group>"; };
+		7A1856F313AA97E100E468C2 /* FlxTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxTouches.h; sourceTree = "<group>"; };
+		7A1856F413AA97E100E468C2 /* FlxU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlxU.h; sourceTree = "<group>"; };
+		7A1856F613AA97E100E468C2 /* SemiSecret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemiSecret.h; sourceTree = "<group>"; };
+		7A1856F713AA97E100E468C2 /* SemiSecretFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemiSecretFont.h; sourceTree = "<group>"; };
+		7A1856F813AA97E100E468C2 /* SemiSecretText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemiSecretText.h; sourceTree = "<group>"; };
+		7A1856F913AA97E100E468C2 /* SemiSecretTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemiSecretTexture.h; sourceTree = "<group>"; };
+		7A1856FC13AA97E100E468C2 /* FlashFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashFunction.m; sourceTree = "<group>"; };
+		7A1856FD13AA97E100E468C2 /* FlashObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashObject.m; sourceTree = "<group>"; };
+		7A1856FE13AA97E100E468C2 /* FlashPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashPoint.m; sourceTree = "<group>"; };
+		7A1856FF13AA97E100E468C2 /* FlashRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashRectangle.m; sourceTree = "<group>"; };
+		7A18570113AA97E100E468C2 /* FlixelAPTBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlixelAPTBindings.m; sourceTree = "<group>"; };
+		7A18570213AA97E100E468C2 /* FlxAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxAnim.m; sourceTree = "<group>"; };
+		7A18570313AA97E100E468C2 /* FlxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxButton.m; sourceTree = "<group>"; };
+		7A18570413AA97E100E468C2 /* FlxEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxEmitter.m; sourceTree = "<group>"; };
+		7A18570513AA97E100E468C2 /* FlxFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxFade.m; sourceTree = "<group>"; };
+		7A18570613AA97E100E468C2 /* FlxFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxFlash.m; sourceTree = "<group>"; };
+		7A18570713AA97E100E468C2 /* FlxG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxG.m; sourceTree = "<group>"; };
+		7A18570813AA97E100E468C2 /* FlxGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxGame.m; sourceTree = "<group>"; };
+		7A18570913AA97E100E468C2 /* FlxGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxGLView.m; sourceTree = "<group>"; };
+		7A18570A13AA97E100E468C2 /* FlxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxGroup.m; sourceTree = "<group>"; };
+		7A18570B13AA97E100E468C2 /* FlxList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxList.m; sourceTree = "<group>"; };
+		7A18570C13AA97E100E468C2 /* FlxManagedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxManagedSprite.m; sourceTree = "<group>"; };
+		7A18570D13AA97E100E468C2 /* FlxObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxObject.m; sourceTree = "<group>"; };
+		7A18570E13AA97E100E468C2 /* FlxPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxPoint.m; sourceTree = "<group>"; };
+		7A18570F13AA97E100E468C2 /* FlxQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxQuadTree.m; sourceTree = "<group>"; };
+		7A18571013AA97E100E468C2 /* FlxQuake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxQuake.m; sourceTree = "<group>"; };
+		7A18571113AA97E100E468C2 /* FlxRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxRect.m; sourceTree = "<group>"; };
+		7A18571213AA97E100E468C2 /* FlxSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxSave.m; sourceTree = "<group>"; };
+		7A18571313AA97E100E468C2 /* FlxSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxSound.m; sourceTree = "<group>"; };
+		7A18571413AA97E100E468C2 /* FlxSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxSprite.m; sourceTree = "<group>"; };
+		7A18571513AA97E100E468C2 /* FlxState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxState.m; sourceTree = "<group>"; };
+		7A18571613AA97E100E468C2 /* FlxText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxText.m; sourceTree = "<group>"; };
+		7A18571713AA97E100E468C2 /* FlxTileblock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxTileblock.m; sourceTree = "<group>"; };
+		7A18571813AA97E100E468C2 /* FlxTouches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxTouches.m; sourceTree = "<group>"; };
+		7A18571913AA97E100E468C2 /* FlxU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlxU.m; sourceTree = "<group>"; };
+		7A18571B13AA97E100E468C2 /* SemiSecretFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemiSecretFont.m; sourceTree = "<group>"; };
+		7A18571C13AA97E100E468C2 /* SemiSecretText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemiSecretText.m; sourceTree = "<group>"; };
+		7A18571D13AA97E100E468C2 /* SemiSecretTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemiSecretTexture.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A18561713AA97B900E468C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A18561F13AA97B900E468C2 /* QuartzCore.framework in Frameworks */,
+				7A18562113AA97B900E468C2 /* OpenGLES.framework in Frameworks */,
+				7A18562313AA97B900E468C2 /* OpenAL.framework in Frameworks */,
+				7A18562513AA97B900E468C2 /* AudioToolbox.framework in Frameworks */,
+				7A18562713AA97B900E468C2 /* AVFoundation.framework in Frameworks */,
+				7A18562913AA97B900E468C2 /* UIKit.framework in Frameworks */,
+				7A18562B13AA97B900E468C2 /* Foundation.framework in Frameworks */,
+				7A18562D13AA97B900E468C2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A18560F13AA97B900E468C2 = {
+			isa = PBXGroup;
+			children = (
+				7A18562E13AA97B900E468C2 /* flixel-example */,
+				7A1856CD13AA97E100E468C2 /* flixel-ios */,
+				7A18561D13AA97B900E468C2 /* Frameworks */,
+				7A18561B13AA97B900E468C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A18561B13AA97B900E468C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A18561A13AA97B900E468C2 /* flixel-example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A18561D13AA97B900E468C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A18561E13AA97B900E468C2 /* QuartzCore.framework */,
+				7A18562013AA97B900E468C2 /* OpenGLES.framework */,
+				7A18562213AA97B900E468C2 /* OpenAL.framework */,
+				7A18562413AA97B900E468C2 /* AudioToolbox.framework */,
+				7A18562613AA97B900E468C2 /* AVFoundation.framework */,
+				7A18562813AA97B900E468C2 /* UIKit.framework */,
+				7A18562A13AA97B900E468C2 /* Foundation.framework */,
+				7A18562C13AA97B900E468C2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A18562E13AA97B900E468C2 /* flixel-example */ = {
+			isa = PBXGroup;
+			children = (
+				7A18562F13AA97B900E468C2 /* Resources */,
+				7A1856BB13AA97BA00E468C2 /* Classes */,
+				7A1856B613AA97BA00E468C2 /* Supporting Files */,
+			);
+			path = "flixel-example";
+			sourceTree = "<group>";
+		};
+		7A18562F13AA97B900E468C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A18563013AA97B900E468C2 /* Default.png */,
+				7A18563413AA97B900E468C2 /* Icon-72.png */,
+				7A18563613AA97B900E468C2 /* Icon-Small-50.png */,
+				7A18563813AA97B900E468C2 /* Icon-Small.png */,
+				7A18563A13AA97B900E468C2 /* Icon-Small@2x.png */,
+				7A18563C13AA97B900E468C2 /* Icon.png */,
+				7A18563E13AA97B900E468C2 /* Icon@2x.png */,
+				7A18564013AA97B900E468C2 /* Info.plist */,
+				7A18564113AA97B900E468C2 /* iTunesArtwork */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A1856B613AA97BA00E468C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856B713AA97BA00E468C2 /* Info.plist */,
+				7A1856B813AA97BA00E468C2 /* Prefix.pch */,
+				7A1856B913AA97BA00E468C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A1856BB13AA97BA00E468C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856BC13AA97BA00E468C2 /* AppDelegate.h */,
+				7A1856BD13AA97BA00E468C2 /* AppDelegate.m */,
+				7A1856BF13AA97BA00E468C2 /* UIImage+RIFAddition.h */,
+				7A1856C013AA97BA00E468C2 /* UIImage+RIFAddition.m */,
+				7A1856C213AA97BA00E468C2 /* Example.h */,
+				7A1856C313AA97BA00E468C2 /* Example.m */,
+				7A1856C513AA97BA00E468C2 /* ExampleState.h */,
+				7A1856C613AA97BA00E468C2 /* ExampleState.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		7A1856CD13AA97E100E468C2 /* flixel-ios */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856CE13AA97E100E468C2 /* .gitignore */,
+				7A1856CF13AA97E100E468C2 /* ENGINE_LICENSE.TXT */,
+				7A1856D013AA97E100E468C2 /* fonts */,
+				7A1856D313AA97E100E468C2 /* Headers */,
+				7A1856FA13AA97E100E468C2 /* src */,
+			);
+			name = "flixel-ios";
+			path = "../flixel-ios";
+			sourceTree = "<group>";
+		};
+		7A1856D013AA97E100E468C2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856D113AA97E100E468C2 /* Flixel.ttf */,
+				7A1856D213AA97E100E468C2 /* FlixelFont.m */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		7A1856D313AA97E100E468C2 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856D413AA97E100E468C2 /* Flash */,
+				7A1856DA13AA97E100E468C2 /* Flixel */,
+				7A1856F513AA97E100E468C2 /* SemiSecret */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		7A1856D413AA97E100E468C2 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856D513AA97E100E468C2 /* Flash.h */,
+				7A1856D613AA97E100E468C2 /* FlashFunction.h */,
+				7A1856D713AA97E100E468C2 /* FlashObject.h */,
+				7A1856D813AA97E100E468C2 /* FlashPoint.h */,
+				7A1856D913AA97E100E468C2 /* FlashRectangle.h */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		7A1856DA13AA97E100E468C2 /* Flixel */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856DB13AA97E100E468C2 /* Flixel.h */,
+				7A1856DC13AA97E100E468C2 /* FlixelAPTBindings.h */,
+				7A1856DD13AA97E100E468C2 /* FlxAnim.h */,
+				7A1856DE13AA97E100E468C2 /* FlxButton.h */,
+				7A1856DF13AA97E100E468C2 /* FlxEmitter.h */,
+				7A1856E013AA97E100E468C2 /* FlxFade.h */,
+				7A1856E113AA97E100E468C2 /* FlxFlash.h */,
+				7A1856E213AA97E100E468C2 /* FlxG.h */,
+				7A1856E313AA97E100E468C2 /* FlxGame.h */,
+				7A1856E413AA97E100E468C2 /* FlxGLView.h */,
+				7A1856E513AA97E100E468C2 /* FlxGroup.h */,
+				7A1856E613AA97E100E468C2 /* FlxList.h */,
+				7A1856E713AA97E100E468C2 /* FlxManagedSprite.h */,
+				7A1856E813AA97E100E468C2 /* FlxObject.h */,
+				7A1856E913AA97E100E468C2 /* FlxPoint.h */,
+				7A1856EA13AA97E100E468C2 /* FlxQuadTree.h */,
+				7A1856EB13AA97E100E468C2 /* FlxQuake.h */,
+				7A1856EC13AA97E100E468C2 /* FlxRect.h */,
+				7A1856ED13AA97E100E468C2 /* FlxSave.h */,
+				7A1856EE13AA97E100E468C2 /* FlxSound.h */,
+				7A1856EF13AA97E100E468C2 /* FlxSprite.h */,
+				7A1856F013AA97E100E468C2 /* FlxState.h */,
+				7A1856F113AA97E100E468C2 /* FlxText.h */,
+				7A1856F213AA97E100E468C2 /* FlxTileblock.h */,
+				7A1856F313AA97E100E468C2 /* FlxTouches.h */,
+				7A1856F413AA97E100E468C2 /* FlxU.h */,
+			);
+			path = Flixel;
+			sourceTree = "<group>";
+		};
+		7A1856F513AA97E100E468C2 /* SemiSecret */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856F613AA97E100E468C2 /* SemiSecret.h */,
+				7A1856F713AA97E100E468C2 /* SemiSecretFont.h */,
+				7A1856F813AA97E100E468C2 /* SemiSecretText.h */,
+				7A1856F913AA97E100E468C2 /* SemiSecretTexture.h */,
+			);
+			path = SemiSecret;
+			sourceTree = "<group>";
+		};
+		7A1856FA13AA97E100E468C2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856FB13AA97E100E468C2 /* Flash */,
+				7A18570013AA97E100E468C2 /* Flixel */,
+				7A18571A13AA97E100E468C2 /* SemiSecret */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7A1856FB13AA97E100E468C2 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				7A1856FC13AA97E100E468C2 /* FlashFunction.m */,
+				7A1856FD13AA97E100E468C2 /* FlashObject.m */,
+				7A1856FE13AA97E100E468C2 /* FlashPoint.m */,
+				7A1856FF13AA97E100E468C2 /* FlashRectangle.m */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		7A18570013AA97E100E468C2 /* Flixel */ = {
+			isa = PBXGroup;
+			children = (
+				7A18570113AA97E100E468C2 /* FlixelAPTBindings.m */,
+				7A18570213AA97E100E468C2 /* FlxAnim.m */,
+				7A18570313AA97E100E468C2 /* FlxButton.m */,
+				7A18570413AA97E100E468C2 /* FlxEmitter.m */,
+				7A18570513AA97E100E468C2 /* FlxFade.m */,
+				7A18570613AA97E100E468C2 /* FlxFlash.m */,
+				7A18570713AA97E100E468C2 /* FlxG.m */,
+				7A18570813AA97E100E468C2 /* FlxGame.m */,
+				7A18570913AA97E100E468C2 /* FlxGLView.m */,
+				7A18570A13AA97E100E468C2 /* FlxGroup.m */,
+				7A18570B13AA97E100E468C2 /* FlxList.m */,
+				7A18570C13AA97E100E468C2 /* FlxManagedSprite.m */,
+				7A18570D13AA97E100E468C2 /* FlxObject.m */,
+				7A18570E13AA97E100E468C2 /* FlxPoint.m */,
+				7A18570F13AA97E100E468C2 /* FlxQuadTree.m */,
+				7A18571013AA97E100E468C2 /* FlxQuake.m */,
+				7A18571113AA97E100E468C2 /* FlxRect.m */,
+				7A18571213AA97E100E468C2 /* FlxSave.m */,
+				7A18571313AA97E100E468C2 /* FlxSound.m */,
+				7A18571413AA97E100E468C2 /* FlxSprite.m */,
+				7A18571513AA97E100E468C2 /* FlxState.m */,
+				7A18571613AA97E100E468C2 /* FlxText.m */,
+				7A18571713AA97E100E468C2 /* FlxTileblock.m */,
+				7A18571813AA97E100E468C2 /* FlxTouches.m */,
+				7A18571913AA97E100E468C2 /* FlxU.m */,
+			);
+			path = Flixel;
+			sourceTree = "<group>";
+		};
+		7A18571A13AA97E100E468C2 /* SemiSecret */ = {
+			isa = PBXGroup;
+			children = (
+				7A18571B13AA97E100E468C2 /* SemiSecretFont.m */,
+				7A18571C13AA97E100E468C2 /* SemiSecretText.m */,
+				7A18571D13AA97E100E468C2 /* SemiSecretTexture.m */,
+			);
+			path = SemiSecret;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A18561913AA97B900E468C2 /* flixel-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1856CA13AA97BA00E468C2 /* Build configuration list for PBXNativeTarget "flixel-example" */;
+			buildPhases = (
+				7A18561613AA97B900E468C2 /* Sources */,
+				7A18561713AA97B900E468C2 /* Frameworks */,
+				7A18561813AA97B900E468C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flixel-example";
+			productName = "flixel-example";
+			productReference = 7A18561A13AA97B900E468C2 /* flixel-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A18561113AA97B900E468C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = MindSnacks;
+			};
+			buildConfigurationList = 7A18561413AA97B900E468C2 /* Build configuration list for PBXProject "flixel-example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A18560F13AA97B900E468C2;
+			productRefGroup = 7A18561B13AA97B900E468C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A18561913AA97B900E468C2 /* flixel-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A18561813AA97B900E468C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A18563113AA97B900E468C2 /* Default.png in Resources */,
+				7A18563513AA97B900E468C2 /* Icon-72.png in Resources */,
+				7A18563713AA97B900E468C2 /* Icon-Small-50.png in Resources */,
+				7A18563913AA97B900E468C2 /* Icon-Small.png in Resources */,
+				7A18563B13AA97B900E468C2 /* Icon-Small@2x.png in Resources */,
+				7A18563D13AA97B900E468C2 /* Icon.png in Resources */,
+				7A18563F13AA97B900E468C2 /* Icon@2x.png in Resources */,
+				7A18564213AA97B900E468C2 /* iTunesArtwork in Resources */,
+				7A18571E13AA97E100E468C2 /* .gitignore in Resources */,
+				7A18571F13AA97E100E468C2 /* ENGINE_LICENSE.TXT in Resources */,
+				7A18572013AA97E100E468C2 /* Flixel.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A18561613AA97B900E468C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1856BA13AA97BA00E468C2 /* main.m in Sources */,
+				7A1856BE13AA97BA00E468C2 /* AppDelegate.m in Sources */,
+				7A1856C113AA97BA00E468C2 /* UIImage+RIFAddition.m in Sources */,
+				7A1856C413AA97BA00E468C2 /* Example.m in Sources */,
+				7A1856C713AA97BA00E468C2 /* ExampleState.m in Sources */,
+				7A18572113AA97E100E468C2 /* FlixelFont.m in Sources */,
+				7A18572213AA97E100E468C2 /* FlashFunction.m in Sources */,
+				7A18572313AA97E100E468C2 /* FlashObject.m in Sources */,
+				7A18572413AA97E100E468C2 /* FlashPoint.m in Sources */,
+				7A18572513AA97E100E468C2 /* FlashRectangle.m in Sources */,
+				7A18572613AA97E100E468C2 /* FlixelAPTBindings.m in Sources */,
+				7A18572713AA97E100E468C2 /* FlxAnim.m in Sources */,
+				7A18572813AA97E100E468C2 /* FlxButton.m in Sources */,
+				7A18572913AA97E100E468C2 /* FlxEmitter.m in Sources */,
+				7A18572A13AA97E100E468C2 /* FlxFade.m in Sources */,
+				7A18572B13AA97E100E468C2 /* FlxFlash.m in Sources */,
+				7A18572C13AA97E100E468C2 /* FlxG.m in Sources */,
+				7A18572D13AA97E100E468C2 /* FlxGame.m in Sources */,
+				7A18572E13AA97E100E468C2 /* FlxGLView.m in Sources */,
+				7A18572F13AA97E100E468C2 /* FlxGroup.m in Sources */,
+				7A18573013AA97E100E468C2 /* FlxList.m in Sources */,
+				7A18573113AA97E100E468C2 /* FlxManagedSprite.m in Sources */,
+				7A18573213AA97E100E468C2 /* FlxObject.m in Sources */,
+				7A18573313AA97E100E468C2 /* FlxPoint.m in Sources */,
+				7A18573413AA97E100E468C2 /* FlxQuadTree.m in Sources */,
+				7A18573513AA97E100E468C2 /* FlxQuake.m in Sources */,
+				7A18573613AA97E100E468C2 /* FlxRect.m in Sources */,
+				7A18573713AA97E100E468C2 /* FlxSave.m in Sources */,
+				7A18573813AA97E100E468C2 /* FlxSound.m in Sources */,
+				7A18573913AA97E100E468C2 /* FlxSprite.m in Sources */,
+				7A18573A13AA97E100E468C2 /* FlxState.m in Sources */,
+				7A18573B13AA97E100E468C2 /* FlxText.m in Sources */,
+				7A18573C13AA97E100E468C2 /* FlxTileblock.m in Sources */,
+				7A18573D13AA97E100E468C2 /* FlxTouches.m in Sources */,
+				7A18573E13AA97E100E468C2 /* FlxU.m in Sources */,
+				7A18573F13AA97E100E468C2 /* SemiSecretFont.m in Sources */,
+				7A18574013AA97E100E468C2 /* SemiSecretText.m in Sources */,
+				7A18574113AA97E100E468C2 /* SemiSecretTexture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7A1856C813AA97BA00E468C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7A1856C913AA97BA00E468C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7A1856CB13AA97BA00E468C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flixel-example/Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/../flixel-ios/Headers\"";
+				INFOPLIST_FILE = "flixel-example/Resources/Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A1856CC13AA97BA00E468C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flixel-example/Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/../flixel-ios/Headers\"";
+				INFOPLIST_FILE = "flixel-example/Resources/Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A18561413AA97B900E468C2 /* Build configuration list for PBXProject "flixel-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1856C813AA97BA00E468C2 /* Debug */,
+				7A1856C913AA97BA00E468C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1856CA13AA97BA00E468C2 /* Build configuration list for PBXNativeTarget "flixel-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1856CB13AA97BA00E468C2 /* Debug */,
+				7A1856CC13AA97BA00E468C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A18561113AA97B900E468C2 /* Project object */;
+}
